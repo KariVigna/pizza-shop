@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <head>
+        <script src="js/scripts.js"></script>
+    </head>
+    <h1>Pizza Shop</h1>
+    <h3>Submit order below:</h3>
+    <body>
+        Select a size:<br>
+        <form>
+                <select id="size">
+                    <option>Small 10"</option>
+                    <option>Medium 14"</option>
+                    <option>Large 18"</option>
+                </select><br><br>
+            Select your toppings:<br>
+            <label>
+                <input type="checkbox" name="topping" value="pep">
+                Pepperoni
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="sausage">
+                Sausage
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="pineapple">
+                Pineapple
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="onion">
+                Onion
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="jala">
+                Jalapeno
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="spinach">
+                Spinach
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="art">
+                Artichoke Hearts
+            </label><br>
+            <button type="submit">Place Order</button>
+        </form><br><br>
+
+        <div class="hidden">
+            Your total will be: $<span id="total"></span>
+        </div>
+    </body>
+</html>
