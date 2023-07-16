@@ -1,6 +1,7 @@
-function Pizza(toppings, size)
+function Pizza(toppings, size) {
     this.toppings = [];
     this.size = 0;
+}
 
 Pizza.prototype.calculateToppingCost = 
 toppings.forEach(function(topping) {
@@ -12,14 +13,13 @@ return toppingPrice
 
 Pizza.prototype.caculateSizeCost = function(size) {
     sizeSelect = document.querySelector("#size");
-    if 
-
-    if 
 
 }
 
 
-
-
 //user interface
 
+function DisplayTotal()
+let totalDiv = document.getElementById("totalDiv")
+totalDiv.classList.remove("hidden");
+totalDiv.innerText="Your total will be $"
