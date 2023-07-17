@@ -1,10 +1,10 @@
+//Business Logic
 function Pizza(toppings, size) {
     this.toppings = toppings;
     this.size = size;
 }
 Pizza.prototype.calculateTotalCost = function(cost) {
     let toppingCost = this.toppings.length * 3;
-    let sizeCost = 0;
     let totalCost = 0
     if (this.size <= 10) {
         let sizeCost = 5;
@@ -18,7 +18,25 @@ Pizza.prototype.calculateTotalCost = function(cost) {
     };
 };
 
-let myPizza = new Pizza(["pepperoni", "onion", "pineapple"], 14)
+
+//UI Logic
+window.addEventListener("load", function () {
+    document.getElementById("order").addEventListener("click", displayCost);
+})
+
+
+function displayCost() {
+    event.preventDefault();
+    
+    totalDiv = document.getElementById("totalDiv");
+    totalDiv.classList.remove("hidden");
+    totalDiv.innerHTML = Pizza.calculateTotalCost
+}
+
+
+
+
+
 
 // Pizza.prototype.calculateToppingCost = function(topping) {
 //     let toppingCost = this.toppings.length * 3;
@@ -48,11 +66,3 @@ let myPizza = new Pizza(["pepperoni", "onion", "pineapple"], 14)
 // Pizza.prototype.caculateSizeCost = function(size) {
 //     sizeSelect = document.querySelector("#size");
 // }
-
-
-//user interface
-
-function DisplayTotal()
-let totalDiv = document.getElementById("totalDiv")
-totalDiv.classList.remove("hidden");
-totalDiv.innerText="Your total will be $"
