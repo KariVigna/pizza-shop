@@ -2,24 +2,40 @@ function Pizza(toppings, size) {
     this.toppings = toppings;
     this.size = size;
 }
-
-Pizza.prototype.calculateToppingCost = function(topping) {
+Pizza.prototype.calculateTotalCost = function(cost) {
     let toppingCost = this.toppings.length * 3;
-    return toppingCost;
-};
-
-Pizza.prototype.calculateSizeCost = function(size) {
+    let sizeCost = 0;
+    let totalCost = 0
     if (this.size <= 10) {
         let sizeCost = 5;
-        return sizeCost
-    } else if (this.size <= 18){
+        return totalCost = sizeCost + toppingCost
+    } else if (this.size <= 14){
         let sizeCost = 10;
-        return sizeCost 
+        return totalCost = sizeCost + toppingCost
     } else {
         let sizeCost = 15;
-        return sizeCost
-    }}
+        return totalCost = sizeCost + toppingCost
+    };
+};
+
 let myPizza = new Pizza(["pepperoni", "onion", "pineapple"], 14)
+
+// Pizza.prototype.calculateToppingCost = function(topping) {
+//     let toppingCost = this.toppings.length * 3;
+//     return toppingCost;
+// };
+
+// Pizza.prototype.calculateSizeCost = function(size) {
+//     if (this.size <= 10) {
+//         let sizeCost = 5;
+//         return sizeCost
+//     } else if (this.size <= 18){
+//         let sizeCost = 10;
+//         return sizeCost 
+//     } else {
+//         let sizeCost = 15;
+//         return sizeCost
+//     }};
 
 // Pizza.prototype.calculateToppingCost = 
 // toppings.forEach(function(topping) {
