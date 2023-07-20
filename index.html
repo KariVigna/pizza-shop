@@ -8,42 +8,42 @@
     <h3>Submit order below:</h3>
     <body>
         Select a size:<br>
-        <form>
+        <form id="topForm">
                 <select id="size">
-                    <option id="small">Small 10"</option>
-                    <option id="medium">Medium 14"</option>
-                    <option id="large">Large 18"</option>
+                    <option id="small" value="10">Small 10"</option>
+                    <option id="medium" value="14">Medium 14"</option>
+                    <option id="large" value="18">Large 18"</option>
                 </select><br><br>
             Select your toppings:<br>
             <label>
-                <input type="checkbox" name="topping" value="3">
+                <input type="checkbox" name="topping" value="Pepperoni">
                 Pepperoni
             </label><br>
             <label>
-                <input type="checkbox" name="topping" value="3">
+                <input type="checkbox" name="topping" value="Sausage">
                 Sausage
             </label><br>
             <label>
-                <input type="checkbox" name="topping" value="3">
+                <input type="checkbox" name="topping" value="Pineapple">
                 Pineapple
             </label><br>
             <label>
-                <input type="checkbox" name="topping" value="3">
+                <input type="checkbox" name="topping" value="Onion">
                 Onion
             </label><br>
             <label>
-                <input type="checkbox" name="topping" value="3">
+                <input type="checkbox" name="topping" value="Jalapeno">
                 Jalapeno
             </label><br>
             <label>
-                <input type="checkbox" name="topping" value="3">
+                <input type="checkbox" name="topping" value="Spinach">
                 Spinach
             </label><br>
             <label>
-                <input type="checkbox" name="topping" value="3">
+                <input type="checkbox" name="topping" value="ArtichokeHearts">
                 Artichoke Hearts
             </label><br>
-            <button id="order">Place Order</button>
+            <button type="submit" id="order">Place Order</button>
         </form><br><br>
         <div id="totalDiv" class="hidden">
 
