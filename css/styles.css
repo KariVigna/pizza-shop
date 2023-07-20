@@ -4,14 +4,40 @@
 
 h1 {
     text-align: center;
-}
-
-h3 {
-    text-align: center;
+    font-weight: 500px;
+    border-style: dotted;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    border-width: 5px;
+    background-color: goldenrod;
 }
 
 body {
-    background-color: palegoldenrod;
+    background-image: url("img/pizza.jpeg");
+    background-size: cover;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
+}
+
+#formDiv {
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    border-style: solid;
+    width: 200px;
+    padding: 20px;
+    background-color: goldenrod;
+}
+
+#totalDiv {
+    font-size: larger;
+    text-align: center;
+    box-sizing: border-box;
+    border-style: solid;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: goldenrod;
 }

@@ -21,7 +21,8 @@ Pizza.prototype.calculateTotalCost = function() {
 
 //UI Logic
 window.addEventListener("load", function () {
-    document.getElementById("topForm").addEventListener("submit", displayCost);
+    document.getElementById("orderForm").addEventListener("submit", displayCost);
+    document.querySelector(".reload").addEventListener("click", refreshPage);
 })
 
 function displayCost() {
@@ -34,13 +35,19 @@ function displayCost() {
             topArray.push(topping.value)
         }
     })
-    console.log(topArray);
     let newPizza = new Pizza(topArray, selectedSize);
-    console.log(newPizza);
     let newPizzaCost = newPizza.calculateTotalCost();
     totalDiv = document.getElementById("totalDiv");
     totalDiv.classList.remove("hidden");
-    totalDiv.innerText = "The cost of your pizza is: $" + newPizzaCost
+    let formDiv = document.getElementById("formDiv");
+    formDiv.setAttribute("class", "hidden");
+    totalDiv.prepend("Thanks for placing your order! Your " + selectedSize + " inch pizza with " + topArray.join(", ") + " will be ready in 20 minutes.");
+    totalSpan = document.getElementById("totalSpan");
+    totalSpan.append(newPizzaCost);
+}
+
+function refreshPage () {
+        location.reload();
 }
 
 

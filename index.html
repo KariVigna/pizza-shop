@@ -4,49 +4,52 @@
     <head>
         <script src="js/scripts.js"></script>
     </head>
-    <h1>Pizza Shop</h1>
-    <h3>Submit order below:</h3>
+    <h1>Epicodus Pizzeria</h1>
     <body>
-        Select a size:<br>
-        <form id="topForm">
+        <div id="formDiv">
+            <h4>Submit Order Below</h4>
+            Select a size:</br>
+            <form id="orderForm">
                 <select id="size">
                     <option id="small" value="10">Small 10"</option>
-                    <option id="medium" value="14">Medium 14"</option>
-                    <option id="large" value="18">Large 18"</option>
-                </select><br><br>
-            Select your toppings:<br>
-            <label>
-                <input type="checkbox" name="topping" value="Pepperoni">
-                Pepperoni
-            </label><br>
-            <label>
-                <input type="checkbox" name="topping" value="Sausage">
-                Sausage
-            </label><br>
-            <label>
-                <input type="checkbox" name="topping" value="Pineapple">
-                Pineapple
-            </label><br>
-            <label>
-                <input type="checkbox" name="topping" value="Onion">
-                Onion
-            </label><br>
-            <label>
-                <input type="checkbox" name="topping" value="Jalapeno">
-                Jalapeno
-            </label><br>
-            <label>
-                <input type="checkbox" name="topping" value="Spinach">
-                Spinach
-            </label><br>
-            <label>
-                <input type="checkbox" name="topping" value="ArtichokeHearts">
-                Artichoke Hearts
-            </label><br>
-            <button type="submit" id="order">Place Order</button>
-        </form><br><br>
+                        <option id="medium" value="14">Medium 14"</option>
+                        <option id="large" value="18">Large 18"</option>
+                    </select><br><br>
+                Select your toppings:<br>
+                <label>
+                    <input type="checkbox" name="topping" value="pepperoni">
+                    Pepperoni
+                </label><br>
+                <label>
+                    <input type="checkbox" name="topping" value="sausage">
+                    Sausage
+                </label><br>
+                <label>
+                    <input type="checkbox" name="topping" value="pineapple">
+                    Pineapple
+                </label><br>
+                <label>
+                    <input type="checkbox" name="topping" value="onion">
+                    Onion
+                </label><br>
+                <label>
+                    <input type="checkbox" name="topping" value="jalapeno">
+                    Jalapeno
+                </label><br>
+                <label>
+                    <input type="checkbox" name="topping" value="spinach">
+                    Spinach
+                </label><br>
+                <label>
+                    <input type="checkbox" name="topping" value="garlic">
+                    Garlic
+                </label><br>
+                <button type="submit" id="order">Place Order</button>
+            </form>
+        </div><br><br>
         <div id="totalDiv" class="hidden">
-
+            <br>Your total will be: $<span id="totalSpan"></span>
+            <br><button class="reload">Order Again?</button>
         </div>
     </body>
 </html>
