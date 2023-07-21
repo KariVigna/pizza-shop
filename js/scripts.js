@@ -39,6 +39,8 @@ function displayCost() {
     let newPizzaCost = newPizza.calculateTotalCost();
     totalDiv = document.getElementById("totalDiv");
     totalDiv.classList.remove("hidden");
+    danceDiv = document.getElementById("dance");
+    danceDiv.classList.remove("hidden");
     let formDiv = document.getElementById("formDiv");
     formDiv.setAttribute("class", "hidden");
     totalDiv.prepend("Thanks for placing your order! Your " + selectedSize + " inch pizza with " + topArray.join(", ") + " will be ready in 20 minutes.");

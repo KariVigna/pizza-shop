@@ -7,14 +7,14 @@
     <h1>Epicodus Pizzeria</h1>
     <body>
         <div id="formDiv">
-            <h4>Submit Order Below</h4>
+            <span id="formHead">Thanks for choosing Epicodus Pizzeria, use the order form below to place your order:</span><br><br>
             Select a size:</br>
             <form id="orderForm">
                 <select id="size">
                     <option id="small" value="10">Small 10"</option>
-                        <option id="medium" value="14">Medium 14"</option>
-                        <option id="large" value="18">Large 18"</option>
-                    </select><br><br>
+                    <option id="medium" value="14">Medium 14"</option>
+                    <option id="large" value="18">Large 18"</option>
+                </select><br><br>
                 Select your toppings:<br>
                 <label>
                     <input type="checkbox" name="topping" value="pepperoni">
@@ -45,11 +45,14 @@
                     Garlic
                 </label><br>
                 <button type="submit" id="order">Place Order</button>
-            </form>
+            </form><br>
         </div><br><br>
         <div id="totalDiv" class="hidden">
             <br>Your total will be: $<span id="totalSpan"></span>
             <br><button class="reload">Order Again?</button>
+        </div>
+        <div id="dance" class="hidden">
+            <img src="css/img/dance.gif">
         </div>
     </body>
 </html>
