@@ -37,13 +37,6 @@ body {
     background-color: goldenrod;
 }
 
-div#kitty {
-    max-width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 #totalDiv {
     font-size: larger;
     text-align: center;

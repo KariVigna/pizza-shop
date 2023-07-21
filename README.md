@@ -19,10 +19,11 @@ _This application takes the user submitted input and creates an object with two 
 * _Clone this repository to desktop_
 * _Navigate this projects top level directory._
 * _Open pizza-shop/index.html in your browser._
+* _Go to karivigna.github.io/pizza-shop in your browser._
 
 ## Known Bugs
 
-* _No curently known bugs_
+* _dance.gif does not show up when deployed on gh-pages branch_
 
 ## License
 
@@ -40,10 +41,24 @@ Expected Output: Pizza (toppings:[], size)
 
 Describe: Pizza.prototype.calculateTotalCost
 
-Test: It should return a sum of the results of Topping Cost and Size Cost.
+Test: It should return a sum of the results of Topping Cost and Size Cost for a medium 3 topping pizza.
 Code: let myPizza = new Pizza(["pepperoni", "pineapple", "jalapeno"], 14)
 myPizza.calculateTotalCost()
 Expected Output: 19
+
+Test: It should return a sum of the results of Topping Cost and Size Cost for a small 1 topping pizza.
+Code: let myPizza = new Pizza(["pepperoni"], 10)
+myPizza.calculateTotalCost()
+Expected Output: 8
+
+Test: It should return a sum of the results of Topping Cost and Size Cost for a large 5 topping pizza.
+Code: let myPizza = new Pizza(["pepperoni", "pineapple", "onion", "jalapeno", "garlic"], 18)
+myPizza.calculateTotalCost()
+Expected Output: 30
+
+
+
+
 
 
 
